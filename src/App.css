@@ -27,7 +27,7 @@ body.dark {
 
   .todo-container {
     padding: 1rem ;
-    margin-top: 0%;
+    margin: 0% auto;
   }
   .input-row {
     gap: 0.6rem;
@@ -45,6 +45,7 @@ body.dark {
   .search-sort-row .search-box,
   .search-sort-row .sort-dropdown,
   .search-sort-row .clear-completed-button {
+    font-size: 0.7rem ;
     width: fit-content;
     max-width: none;
   }
