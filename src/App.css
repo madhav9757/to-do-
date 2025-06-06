@@ -26,9 +26,10 @@ body.dark {
 @media (max-width: 768px) {
 
   .todo-container {
-    padding: 1rem ;
+    padding: 1rem;
     margin: 0% auto;
   }
+
   .input-row {
     gap: 0.6rem;
   }
@@ -45,9 +46,18 @@ body.dark {
   .search-sort-row .search-box,
   .search-sort-row .sort-dropdown,
   .search-sort-row .clear-completed-button {
-    font-size: 0.7rem ;
+    font-size: 0.7rem;
     width: fit-content;
     max-width: none;
+  }
+
+  .top-row {
+    flex-wrap: wrap;
+    margin: 0rem;
+  }
+
+  .top-row input {
+    max-width: 130px;
   }
 }
 
@@ -91,15 +101,14 @@ h1 {
 
 .input-row .top-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.4rem;
   margin-bottom: 0.8rem;
 }
 
 .top-row input,
 .top-row select {
   flex: 1;
-  min-width: 140px;
+  width: 140px;
 }
 
 .input-row input,
