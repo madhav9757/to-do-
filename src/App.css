@@ -23,6 +23,33 @@ body.dark {
   transition: background 0.3s;
 }
 
+@media (max-width: 768px) {
+
+  .todo-container {
+    padding: 1rem ;
+    margin-top: 0%;
+  }
+  .input-row {
+    gap: 0.6rem;
+  }
+
+  .task-list li {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .search-sort-row {
+    align-items: stretch;
+  }
+
+  .search-sort-row .search-box,
+  .search-sort-row .sort-dropdown,
+  .search-sort-row .clear-completed-button {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 body.dark .todo-container {
   background: #2f3542;
 }
@@ -290,8 +317,6 @@ body.dark .description-preview {
 .search-sort-row {
   display: flex;
   gap: 0.8rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
 }
 
 .search-box {
@@ -307,53 +332,17 @@ body.dark .description-preview {
 
 .sort-dropdown {
   padding: 0.5rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  max-width: 200px;
   border-radius: 8px;
   font-size: 1rem;
   border: 1px solid #ccc;
   background: #fff;
   color: #2d3436;
-}
-
-.sort-dropdown {
-  padding: 0.5rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  background: #fff;
-  color: #2d3436;
-  min-width: 160px;
 }
 
 body.dark .sort-dropdown {
   background: #3a3a3a;
   color: #ecf0f1;
   border-color: #555;
-}
-
-@media (max-width: 768px) {
-  .input-row {
-    gap: 0.6rem;
-  }
-
-  .task-list li {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .search-sort-row {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .search-sort-row .search-box,
-  .search-sort-row .sort-dropdown,
-  .search-sort-row .clear-completed-button {
-    width: 100%;
-    max-width: none;
-  }
 }
 
 .empty-task-list-message {
