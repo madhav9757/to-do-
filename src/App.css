@@ -45,7 +45,7 @@ body.dark {
   .search-sort-row .search-box,
   .search-sort-row .sort-dropdown,
   .search-sort-row .clear-completed-button {
-    width: 100%;
+    width: fit-content;
     max-width: none;
   }
 }
